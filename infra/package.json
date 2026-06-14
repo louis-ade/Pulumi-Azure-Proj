@@ -1,0 +1,17 @@
+{
+  "name": "pulumi-aca-webapp-infra",
+  "version": "1.0.0",
+  "description": "Pulumi program that deploys a containerized web app to Azure Container Apps.",
+  "main": "index.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@pulumi/azure-native": "^2.40.0",
+    "@pulumi/docker": "^4.5.0",
+    "@pulumi/pulumi": "^3.0.0"
+  }
+}

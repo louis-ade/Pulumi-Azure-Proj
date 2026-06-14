@@ -1,0 +1,6 @@
+config:
+  pulumi-aca-webapp:location: eastus
+  # The configurable value displayed in the web page response.
+  # Change it with: pulumi config set greeting "Your message here"
+  pulumi-aca-webapp:greeting: "Hello from Pulumi on Azure Container Apps!"
+encryptionsalt: v1:hIuNrDhtHuE=:v1:xUGkPupxAB3XrtMv:jFQhaiS31dykZpIFRS2+YCmtVIGpCw==

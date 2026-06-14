@@ -1,0 +1,9 @@
+name: pulumi-aca-webapp
+runtime:
+  name: nodejs
+  options:
+    typescript: true
+description: >-
+  Deploys a custom containerized web app to Azure Container Apps. The web page
+  returns a configurable greeting set via `pulumi config`. Core resources are
+  encapsulated in a reusable ContainerApp ComponentResource.
