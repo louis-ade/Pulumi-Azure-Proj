@@ -133,6 +133,42 @@ you need it.
 
 ## Step-by-step: putting the app online
 
+### First, choose where Pulumi keeps its notes (and about that "passphrase")
+
+Pulumi needs somewhere to remember what it has created. This is called the
+**backend**, and you pick it once by logging in. You have two easy options:
+
+- **Pulumi Cloud (recommended for beginners)** — a free hosted account that
+  stores everything for you and handles security automatically. Run:
+
+  ```bash
+  pulumi login
+  ```
+
+  This opens your browser to sign in (it's free). With this option you will
+  **not** be asked for a passphrase.
+
+- **Store it on your own computer** — no account needed, but Pulumi will ask you
+  to create a **passphrase** to protect any secrets. A passphrase is just a
+  password *you* make up and remember. Run:
+
+  ```bash
+  pulumi login --local
+  ```
+
+  The first time, set your passphrase so you aren't prompted every time:
+
+  ```bash
+  export PULUMI_CONFIG_PASSPHRASE="choose-any-password-you-like"
+  ```
+
+> **Seeing a passphrase prompt you didn't set?** That means Pulumi is using the
+> local option above and just wants you to pick a password — type one in (and
+> remember it). Switching to `pulumi login` (Pulumi Cloud) avoids passphrases
+> entirely.
+
+### Then run the deploy
+
 Open a terminal (the black "command line" window) and run these commands one at a
 time. Lines starting with `#` are explanations — you don't type those.
 
